@@ -18,7 +18,7 @@ Language.syntax = [
 	{ input : /([^:])#(.*?)(<br|<\/P)/g, output : '$1<i>#$2</i>$3' }, // php comments #
 	{ input : /\/\*(.*?)\*\//g, output : '<i>/*$1*/</i>' }, // php comments /* */
 	{ input : /(&lt;!--.*?--&gt.)/g, output : '<big>$1</big>' } // html comments
-]
+];
 
 Language.snippets = [
 	{ input : 'if', output : 'if($0){\n\t\n}' },
@@ -43,7 +43,7 @@ Language.snippets = [
 	{ input : 'ret', output : 'return $0;' },
 	{ input : 'def', output : 'define(\'$0\',\'\');' },
 	{ input : '<?', output : 'php\n$0\n?>' }
-]
+];
 
 Language.complete = [
 	{ input : '\'', output : '\'$0\'' },
@@ -51,11 +51,11 @@ Language.complete = [
 	{ input : '(', output : '\($0\)' },
 	{ input : '[', output : '\[$0\]' },
 	{ input : '{', output : '{\n\t$0\n}' }		
-]
+];
 
 Language.shortcuts = [
 	{ input : '[space]', output : '&nbsp;' },
 	{ input : '[enter]', output : '<br />' } ,
 	{ input : '[j]', output : 'testing' },
 	{ input : '[7]', output : '&amp;' }
-]
+];
